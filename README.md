@@ -10,31 +10,36 @@ Features -----------------------------------------------------------------------
 
 1. User Authentication:
 Users can create an account and log in using their credentials.
+
 Profile Management: Users can view and update their profile details including password changes.
 
-2. Voting:
+3. Voting:
  Users with the Voter role can cast votes for their chosen electors.
+
  Voters can view a list of electors and check the voting count.
 
-3. Electoral Management:
+5. Electoral Management:
  Users with the Admin role can manage electors by adding, updating, or deleting them.
 
 API Endpoints ------------------------------------------------------------------------------
 
 1. Authentication
+
  Login: /login - Allows users to log in.
+ 
  Sign Up: /signup - Allows users to create a new account.
 
-2. Profile Management
+3. Profile Management
+   
  Access Profile: GET /profile - Fetches the details of the logged-in user.
  Change Password: PUT /profile/password - Allows the user to update their password.
 
-3. Voting
+5. Voting
  View Electors: GET /electors - Fetches a list of available electors.
  Vote for Elector: POST /vote/:electorID - Allows the user to vote for a specific elector.
  Vote Count: GET /vote/count - Retrieves the total votes cast.
 
-4. Electoral Management (Admin)
+6. Electoral Management (Admin)
  Create Elector: POST /electors - Allows admins to add a new elector.
  Update Elector: PUT /electors/:electorID - Allows admins to update an elector’s details.
  Delete Elector: DELETE /electors/:electorID - Allows admins to remove an elector.
