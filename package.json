@@ -1,0 +1,11 @@
+{
+  "name": "quick_vote",
+  "version": "1.0.0",
+  "description": "real time voting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
