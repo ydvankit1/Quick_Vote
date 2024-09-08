@@ -4,7 +4,7 @@ Voting App
 Overview
 
 
-This is a Voting Application that allows users to securely vote in an election. The app has different roles for users such as Voter and Admin, and each role has specific functionalities. Voters can view a list of electors, cast their vote, and view vote counts. Admins can manage the electoral process by adding, updating, or removing electors.
+This is a backend application for a voting system that allows users to securely vote in an election. The app has different roles for users such as Voter and Admin, and each role has specific functionalities. Voters can view a list of electors, cast their vote, and view vote counts. Admins can manage the electoral process by adding, updating, or removing electors.
 
 Features ----------------------------------------------------------------------------------
 
