@@ -1,3 +1,5 @@
+![Person(Voter and Admin)](https://github.com/user-attachments/assets/26df4ae8-89f2-426b-8fc1-dd7fbbe11914)
+![Candidate](https://github.com/user-attachments/assets/1ecbf6ac-b328-480e-87fb-297c977fb6a6)
 Voting App
 
 
