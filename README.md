@@ -1,3 +1,4 @@
+![flowchart](https://github.com/user-attachments/assets/50d9c9ca-344f-48d0-b12a-5dddb5e0dc25)
 <img width="458" alt="Person(Voter and Admin)" src="https://github.com/user-attachments/assets/8bbe7e61-3209-45ca-9904-96b96b5d0925">
 <img width="448" alt="Candidate" src="https://github.com/user-attachments/assets/52f13d58-2504-4721-885b-5c8661b6799d">
 
