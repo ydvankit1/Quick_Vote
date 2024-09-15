@@ -1,5 +1,6 @@
-![Person(Voter and Admin)](https://github.com/user-attachments/assets/26df4ae8-89f2-426b-8fc1-dd7fbbe11914)
-![Candidate](https://github.com/user-attachments/assets/1ecbf6ac-b328-480e-87fb-297c977fb6a6)
+<img width="458" alt="Person(Voter and Admin)" src="https://github.com/user-attachments/assets/8bbe7e61-3209-45ca-9904-96b96b5d0925">
+<img width="448" alt="Candidate" src="https://github.com/user-attachments/assets/52f13d58-2504-4721-885b-5c8661b6799d">
+
 Voting App
 
 
