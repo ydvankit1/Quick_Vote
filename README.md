@@ -5,13 +5,17 @@
 **Voting App**
 
 
+
 **1.Overview**
+
 
 
 This is a backend application for a voting system that allows users to securely vote in an election. The app has different roles for users such as Voter and Admin, and each role has specific functionalities. Voters can view a list of electors, cast their vote, and view vote counts. Admins can manage the electoral process by adding, updating, or removing electors.
 
 
+
 **2.Features**
+
 
 
 **a. User Authentication:**
@@ -39,7 +43,9 @@ Users can view and update their profile details including password changes.
  Users with the Admin role can manage electors by adding, updating, or deleting them.
  
 
+
 **3.API Endpoints**
+
 
 
 **a. Authentication**
@@ -76,9 +82,11 @@ Users can view and update their profile details including password changes.
  Update Elector: PUT /electors/:electorID - Allows admins to update an elector’s details.
  
  Delete Elector: DELETE /electors/:electorID - Allows admins to remove an elector.
+
  
 
 **4.Flow Diagram**
+
 
 
 The flow diagram attached in repository illustrates the different user roles and their corresponding interactions with the system.
