@@ -77,7 +77,7 @@ Users can view and update their profile details including password changes.
 **d. Electoral Management (Admin)**
 
 
- Create Elector: POST /electors - Allows admins to add a new elector.
+ Create Elector: POST /electors - Allows admins to add a new electors.
  
  Update Elector: PUT /electors/:electorID - Allows admins to update an elector’s details.
  
