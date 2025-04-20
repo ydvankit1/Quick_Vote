@@ -1,3 +1,10 @@
+![Screenshot 2025-04-20 224603](https://github.com/user-attachments/assets/cfc63c4a-6b61-4d93-8412-0d5e5299bffb)
+![Screenshot 2025-04-20 224420](https://github.com/user-attachments/assets/80c9b054-5a64-4d51-a735-8e563a84b3fe)
+![Screenshot 2025-04-20 224358](https://github.com/user-attachments/assets/59b0c5c9-f948-4603-886c-ba266e000e04)
+![Screenshot 2025-04-20 224247](https://github.com/user-attachments/assets/453b19bf-4f86-43c9-9350-05d01ae76658)
+![Screenshot 2025-04-20 224152](https://github.com/user-attachments/assets/0b8163c0-bc79-4987-8d3d-44687574293b)
+![Screenshot 2025-04-20 223802](https://github.com/user-attachments/assets/3a17b5a6-aada-4010-bf3a-1aa750584221)
+![Screenshot 2025-04-20 223449](https://github.com/user-attachments/assets/f25cabb6-418a-4780-b9b2-169575163212)
 # 🗳️ Voting App
 
 A full-stack secure voting application that allows users to participate in elections with roles such as **Voter** and **Admin**. The system ensures role-based access and enables both frontend and backend functionality.
