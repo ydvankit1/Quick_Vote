@@ -1,92 +1,83 @@
-![flowchart](https://github.com/user-attachments/assets/50d9c9ca-344f-48d0-b12a-5dddb5e0dc25)
-<img width="458" alt="Person(Voter and Admin)" src="https://github.com/user-attachments/assets/8bbe7e61-3209-45ca-9904-96b96b5d0925">
-<img width="448" alt="Candidate" src="https://github.com/user-attachments/assets/52f13d58-2504-4721-885b-5c8661b6799d">
+# 🗳️ Voting App
 
-**Voting App**
+A full-stack secure voting application that allows users to participate in elections with roles such as **Voter** and **Admin**. The system ensures role-based access and enables both frontend and backend functionality.
 
+---
 
+## 🔍 1. Overview
 
-**1.Overview**
+This is a full-stack voting system built with a **Node.js/Express backend** and a **React frontend** along with **MongoDB Database**. Users can register either as a voter or admin and perform actions according to their roles:
 
+- **Voters** can view candidates, cast votes.
+- **Admins** can manage the election process by adding, editing, or removing electors and viewing statistics.
 
+---
 
-This is a backend application for a voting system that allows users to securely vote in an election. The app has different roles for users such as Voter and Admin, and each role has specific functionalities. Voters can view a list of electors, cast their vote, and view vote counts. Admins can manage the electoral process by adding, updating, or removing electors.
+## ✨ 2. Features
 
+### ✅ User Authentication
+- Users can register and log in securely.
+- JWT-based authentication.
+- Role selection during signup (Voter/Admin).
 
+### 👤 Profile Management
+- Users can view and update profile information.
+- Secure password change functionality.
 
-**2.Features**
+### 🗳️ Voting (Voter Role)
+- View all available electors.
+- Cast a vote for a selected elector.
 
+### 🧑‍💼 Electoral Management (Admin Role)
+- Add, update, or delete electors.
+- View all voting activity and statistics.
 
+---
 
-**a. User Authentication:**
+## 🛠️ 3. Tech Stack
 
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
 
-Users can create an account and log in using their credentials.
+### Frontend
+- React.js
+- React Router
+- Axios
+- Styled with modern responsive UI
 
-**b. Profile Management:**
+---
 
+## 🌐 4. API Endpoints
 
-Users can view and update their profile details including password changes.
+### 🔐 Authentication
+- `POST /signup` – Register as a voter or admin.
+- `POST /login` – Login using email and password.
 
+### 👤 Profile
+- `GET /profile` – Get user details.
+- `PUT /profile/password` – Update password.
 
-**c. Voting:**
+### 🗳️ Voting (Voter)
+- `GET /electors` – View list of electors.
+- `POST /vote/:electorID` – Cast a vote.
 
+### 🧑‍💼 Electoral Management (Admin)
+- `POST /electors` – Add a new elector.
+- `PUT /electors/:electorID` – Update elector details.
+- `DELETE /electors/:electorID` – Delete an elector.
 
- Users with the Voter role can cast votes for their chosen electors.
+---
 
- Voters can view a list of electors and check the voting count.
- 
+## 🧭 5. Application Flow
 
-**d. Electoral Management:**
+The application consists of two user flows:
 
+- **Voter Flow**: Sign up/login → View electors → Cast vote .
+- **Admin Flow**: Sign up/login → Manage electors → View voting statistics.
 
- Users with the Admin role can manage electors by adding, updating, or deleting them.
- 
-
-
-**3.API Endpoints**
-
-
-
-**a. Authentication**
-
-
- Login: /login - Allows users to log in.
- 
- Sign Up: /signup - Allows users to create a new account.
- 
-
-**b. Profile Management**
-
-   
- Access Profile: GET /profile - Fetches the details of the logged-in user.
- 
- Change Password: PUT /profile/password - Allows the user to update their password.
- 
-
-**c. Voting**
-
-
- View Electors: GET /electors - Fetches a list of available electors.
- 
- Vote for Elector: POST /vote/:electorID - Allows the user to vote for a specific elector.
- 
- Vote Count: GET /vote/count - Retrieves the total votes cast.
-
- 
-**d. Electoral Management (Admin)**
-
-
- Create Elector: POST /electors - Allows admins to add a new electors.
- 
- Update Elector: PUT /electors/:electorID - Allows admins to update an elector’s details.
- 
- Delete Elector: DELETE /electors/:electorID - Allows admins to remove an elector.
-
- 
-
-**4.Flow Diagram**
+> 📌 A flow diagram is included in the repository illustrating these flows.
 
 
-
-The flow diagram attached in repository illustrates the different user roles and their corresponding interactions with the system.
