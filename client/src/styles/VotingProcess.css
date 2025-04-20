@@ -1,0 +1,130 @@
+/* Container styles */
+.voting-process-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  .voting-process-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styles */
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  /* Loading message styles */
+  .loading-message {
+    font-style: italic;
+  }
+  
+  /* Candidate list styles */
+  .candidate-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Candidate list item styles */
+  .candidate-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Vote button styles */
+  .vote-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Voting result button styles */
+  .view-result-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+
+  .voting-process-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .voting-process-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .error {
+    color: #e53935;
+    background-color: #ffebee;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .loading-message {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .candidate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .candidate-table th,
+  .candidate-table td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .candidate-table th {
+    background-color: #f5f5f5;
+    color: #444;
+    font-weight: 600;
+  }
+  
+  .candidate-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .vote-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vote-button:hover {
+    background-color: #43a047;
+  }
+  
+  .vote-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

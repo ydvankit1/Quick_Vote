@@ -1,0 +1,24 @@
+.admin-profile-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.admin-profile-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.admin-profile-card p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+.admin-profile-card .error {
+  color: red;
+}

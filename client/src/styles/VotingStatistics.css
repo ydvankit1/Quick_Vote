@@ -1,0 +1,62 @@
+.voting-stats-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.voting-stats-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.voting-stats-header h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.voting-stats-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.stats-table th,
+.stats-table td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.stats-table thead {
+  background-color: #4b6cb7;
+  color: #fff;
+}
+
+.stats-table tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.stats-table tbody tr:hover {
+  background-color: #e6e6e6;
+  transition: background-color 0.3s ease;
+}

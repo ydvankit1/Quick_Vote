@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/user');
 const {jwtAuthMiddleware, generateToken} = require('../jwt');
 const Candidate = require('../models/candidate');
+const mongoose = require('mongoose');
 
 
 const checkAdminRole = async (userID) => {             // method to check admin role
@@ -41,11 +42,14 @@ router.post('/', jwtAuthMiddleware, async (req, res) =>{
 //PUT route to update candidate
 router.put('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     try{
-        if(!checkAdminRole(req.user.id))
+        if(!await(checkAdminRole(req.user.id)))
             return res.status(403).json({message: 'user does not have admin role'});
         
         const candidateID = req.params.candidateID; // Extract the id from the URL parameter
         const updatedCandidateData = req.body; // Updated data for the person
+
+        console.log("Candidate ID received:", candidateID);
+        console.log("Updated candidate data:", updatedCandidateData);
 
         const response = await Candidate.findByIdAndUpdate(candidateID, updatedCandidateData, {
             new: true, // Return the updated document
@@ -67,10 +71,15 @@ router.put('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
 // DELETE route to delete candidate
 router.delete('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     try{
-        if(!checkAdminRole(req.user.id))
+        if(!await(checkAdminRole(req.user.id)))
             return res.status(403).json({message: 'user does not have admin role'});
         
         const candidateID = req.params.candidateID; // Extract the id from the URL parameter
+        console.log("Candidate ID received:", candidateID);
+        
+        if (!mongoose.Types.ObjectId.isValid(candidateID)) {
+            return res.status(400).json({ error: 'Invalid candidate ID' });
+          }
 
         const response = await Candidate.findByIdAndDelete(candidateID);
 
@@ -80,12 +89,11 @@ router.delete('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
 
         console.log('candidate deleted');
         res.status(200).json(response);
-    }catch(err){
-        console.log(err);
-        res.status(500).json({error: 'Internal Server Error'});
-    }
+    }catch (err){
+        console.error("Error deleting candidate:", err);
+        res.status(500).json({ error: 'Internal Server Error' });
+      }
 })
-
 
 // GET route to vote count 
 router.get('/vote/count', async (req, res) => {
@@ -108,13 +116,15 @@ router.get('/vote/count', async (req, res) => {
     }
 });
 
-// GET route to let's start voting
-router.get('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
+// POST route to let's start voting
+router.post('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     // no admin can vote
     // user can only vote once
     
     candidateID = req.params.candidateID;
     userId = req.user.id;
+    console.log("Candidate ID received:", candidateID);
+    console.log("User ID received:", userId);
 
     try{
         // Find the Candidate document with the specified candidateID
@@ -150,13 +160,10 @@ router.get('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     }
 });
 
-
-
-// Get List of all candidates with only name and party fields
+// Get List of all candidates with only name age and party and voteCount fields
 router.get('/', async (req, res) => {
     try {
-        // Find all candidates and select only the name and party fields, excluding _id
-        const candidates = await Candidate.find({}, 'name party -_id');
+        const candidates = await Candidate.find({}, 'name party age voteCount _id');
 
         // Return the list of candidates
         res.status(200).json(candidates);

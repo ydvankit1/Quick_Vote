@@ -1,0 +1,41 @@
+.profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.profile-error {
+  color: #c0392b;
+  margin-bottom: 1rem;
+}
+
+.password-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.password-form input {
+  margin-bottom: 1rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.password-form button {
+  padding: 0.8rem;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
